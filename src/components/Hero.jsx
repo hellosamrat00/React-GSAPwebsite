@@ -85,7 +85,6 @@ const Hero = () => {
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {isLoading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
           <div className="three-body">
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
@@ -108,6 +107,7 @@ const Hero = () => {
                 src={getVideoSrc(upCommingVideoIndex)}
                 loop
                 muted
+                autoPlay
                 id="current-video"
                 className="size-64 origin-center scale-150 object-center"
                 onLoadedData={handleVideoLoad}
@@ -128,6 +128,7 @@ const Hero = () => {
             src={getVideoSrc(currentIndex)}
             loop
             muted
+            autoPlay
             className="absolute left-0 top-0 size-full object-cover object-center"
             onLoadedData={handleVideoLoad}
           ></video>
