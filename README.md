@@ -1,12 +1,82 @@
-# React + Vite
+# GSAP React Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated landing page built with **React**, **GSAP**, **TailwindCSS**, and **Vite**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Animated hero section with GSAP and ScrollTrigger
+- Responsive design using TailwindCSS
+- Bento grid features section with interactive tilt effects
+- Custom fonts and color palette
+- Modular React components
+- Video and image assets for immersive visuals
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```sh
+git clone https://github.com/your-username/gsap-react.git
+cd gsap-react
+npm install
+```
+
+### Development
+
+Start the development server:
+
+```sh
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+### Build
+
+To build for production:
+
+```sh
+npm run build
+```
+
+### Preview Production Build
+
+```sh
+npm run preview
+```
+
+## Project Structure
+
+```
+src/
+  assets/         # Static assets (images, fonts, videos)
+  components/     # React components
+  App.jsx         # Main app component
+  main.jsx        # Entry point
+  index.css       # Global styles and Tailwind config
+public/
+  img/            # Public images
+  fonts/          # Custom fonts
+  videos/         # Video assets
+```
+
+## Customization
+
+- Update colors and fonts in [`tailwind.config.js`](tailwind.config.js)
+- Add or replace images/videos in [`public/img`](public/img) and [`public/videos`](public/videos)
+- Modify sections by editing components in [`src/components`](src/components)
+
+## License
+
+[MIT](LICENSE) © 2024 Your Name
+
+---
+
+Built with ❤️ using [React](https://react.dev/), [GSAP](https://greensock.com/gsap/), and [TailwindCSS](https://tailwindcss.com/).
